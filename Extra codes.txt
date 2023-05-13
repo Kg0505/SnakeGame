@@ -1,0 +1,42 @@
+if(index===0){
+            snakeElement.classList.add('head');
+        }
+        else{
+            snakeElement.classList.add('snake');
+        }
+        board.appendChild(snakeElement);
+    });
+    //Display Food
+    foodElement=document.createElement('div');
+    foodElement.style.gridRowStart=e.y;
+    foodElement.style.gridColumnStart=e.x;
+    foodElement.classList.add('food');
+    board.appendChild(foodElement);
+
+window.addEventListener('keydown',e=>{
+    inputDir={x:0,y:1}
+    //Start the game 
+    moveSound.play();
+    switch(e.key){
+        case"ArrowUp":
+            console.log("ArrowUp")
+            break;
+        case"ArrowDown":
+            console.log("ArrowDown")
+            break;
+        case"ArrowRight":
+            console.log("ArrowRight")
+            break;
+        case"ArrowLeft":
+            console.log("ArrowwLeft")
+            break;
+        default:
+            break;
+    }
+});     
+
+
+
+
+
+code 2 
